@@ -1,38 +1,39 @@
-# Simple Blogs using micro servive
-
+# Simple Blogs using Microservices
 
 ## Note on this project
 
 ### Goals:
 1. Get a test of micro services architecture
+2. Build as much as possible from scratch
 
-2. Build as much as possible form scratch 
+## Micro Services Blogs Overview
 
-## markup
-
-![](01.png)
-
-![](./02.png)
-
-![](./03.png)
-
-![](./04.png)
+| Section             | Image                           |
+|---------------------|---------------------------------|
+| **Project Overview** | ![](./04.png)                    |
+| **Architecture**     | ![](./client.png)              |
 
 ## Micro Services
 
-![](./micro01.png)
+| Service             | Image                           |
+|---------------------|---------------------------------|
+| **Microservice Architecture** | ![](./micro01.png)     |
 
 ### Client
 
-![](./client.png)
-![](./reacts.png)
+| Client Section       | Image                           |
+|----------------------|---------------------------------|
+| **Client Architecture** | ![](./client.png)             |
+| **React Setup**        | ![](./reacts.png)             |
 
 ### Post Service
 
-![](./post.png)
-
+| Post Service Section | Image                           |
+|----------------------|---------------------------------|
+| **Post Service Architecture** | ![](./post.png)        |
 
 ### Comment Service
 
-![](./comment.png)
-
+| Comment Service Section | Image                           |
+|-------------------------|---------------------------------|
+| **Comment Service Architecture** | ![](./comment.png)     |
