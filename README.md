@@ -1,1 +1,1 @@
-# micro_blogs
+# Simple Blogs using micro servive
