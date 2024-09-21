@@ -18,10 +18,10 @@ app.post("/events", (req, res) => {
   axios.post("http://localhost:4001/events", event).catch((err) => {
     console.log(err.message);
   });
-//   // sub-services query
-//   axios.post("http://localhost:4002/events", event).catch((err) => {
-//     console.log(err.message);
-//   });
+ // sub-services query
+  axios.post("http://localhost:4002/events", event).catch((err) => {
+    console.log(err.message);
+  });
   res.send({ status: "OK" });
 });
 
