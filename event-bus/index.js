@@ -7,8 +7,14 @@ const app = express();
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 
+// events array
+const events = [];
+
 app.post("/events", (req, res) => {
   const event = req.body;
+  
+  // push the event to the events array
+  events.push(event);
 
   // sub-services posts 
   axios.post("http://localhost:4000/events", event).catch((err) => {
@@ -26,9 +32,11 @@ app.post("/events", (req, res) => {
   axios.post("http://localhost:4003/events", event).catch((err) => {
     console.log(err.message);
   });
-
-
   res.send({ status: "Ok the event broadcasted" });
+});
+
+app.get("/events", (req, res) => {
+  res.send(events);
 });
 
 app.listen(4005, () => {
