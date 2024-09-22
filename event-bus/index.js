@@ -22,7 +22,13 @@ app.post("/events", (req, res) => {
   axios.post("http://localhost:4002/events", event).catch((err) => {
     console.log(err.message);
   });
-  res.send({ status: "OK" });
+  // sub-services moderation
+  axios.post("http://localhost:4003/events", event).catch((err) => {
+    console.log(err.message);
+  });
+
+
+  res.send({ status: "Ok the event broadcasted" });
 });
 
 app.listen(4005, () => {
